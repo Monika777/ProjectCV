@@ -1,0 +1,712 @@
+* {
+    box-sizing: border-box;
+}
+/*div, section {
+	border: 1px solid red;
+}*/
+body {
+	font-family: 'Monda', sans-serif;
+	margin: 0;
+	font-size: 16px;
+}
+
+.containerr {
+  width: 100%;
+  max-width: 1400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+/*SECTION HEADER*/
+.headerr { 
+	width: 100%;
+	height: 100vh;
+	color: black;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	flex-wrap: wrap;
+
+}
+.menu {
+	padding: 10px;
+	flex: 100%;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	
+}
+.flex-4 {
+	flex: 100%;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.flex-4 ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 50px;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+.flex-4 a {
+    color: white;
+    text-decoration: none;
+    padding: 10px ;
+    font-size: 1.5em;
+}
+.flex-4 li:first-child a {
+	color: #DEC1A1;
+}
+.flex-4 a:hover {
+	text-decoration: none;
+	color:#DEC1A1 ;
+}
+.flex-4 li:first-child a:hover {
+	color: white;
+}
+/*sprawdzic do rwd co mozna tym ugrac*/
+.hideonmobile {
+	position: absolute; 
+	z-index: -1; 
+	top: 0px; 
+	left: 0px; 
+	bottom: 0px; 
+	right: 0px; 
+	overflow: hidden; 
+	background-size: cover; 
+	background-color: transparent; 
+	background-repeat: no-repeat; background-position: 50% 50%; 
+	background-image: none;
+}
+
+video {
+	margin: auto; 
+	position: absolute; 
+	z-index: -1; 
+	top: 50%; 
+	left: 50%; 
+	transform: translate(-50%, -50%); 
+	visibility: visible; 
+	opacity: 1; 
+	width: auto; 
+	height: 856px;
+}
+
+
+.slogan {
+	margin-top: 15vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.slogan h3 span {
+	text-transform: uppercase;
+
+}
+.slogan h3 {
+	margin: 0;
+	font-weight: lighter;
+	font-size: 2.4em;
+	
+}
+.slogan img {
+	width: 30vh;
+	height: auto;
+}
+
+/*BUTTON WITH ANIMATION*/
+.main {
+	background-color: transparent;
+	text-align: center;
+	max-width: 200px;
+	height: auto;
+	border: 4px solid #DEC1A1;
+	padding: 10px;
+	font-family: 'Montserrat', sans-serif;
+	margin-top: 30px;
+	color: black;
+	cursor: pointer;
+	background-position: 100% 0; 
+	background-size: 300%;
+	transition: 0.4s;
+	background-image: linear-gradient(135deg,  #DEC1A1 50%, transparent 50%);
+	animation: slideInDown 1s ease;
+	margin-bottom: 20%;
+
+}
+
+
+.main:hover {
+	background-position: 0 100%; 
+	color: white;		
+}
+.main h6{
+	font-size: 1.1em;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin: 0;
+}
+
+
+
+/*SECTION DETAILS*/
+.details {
+	width: 100%;
+	height: auto;
+	display: flex;
+	background-color: black;
+	color: white;
+	flex-direction: column;
+	padding: 10px 70px;
+}
+
+.details h1 {
+	padding-top: 20px;
+}
+.details h3 {
+	font-size: 1.3em;
+}
+.details .row {
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.name, .location, .cont {
+	padding-left: 2%;
+    width: 30.5%;
+    margin: 20px 0;
+	border-left: 5px solid rgba(255,255,255,0.2);
+	flex:1;
+}
+.details h1 {
+	font-size: 1.7em;
+}
+.details h1,.details span {
+	text-transform: uppercase;
+	color: #DEC1A1;
+} 
+
+/*SECTION SKILLS*/
+.skills {
+	width: 100%;
+	height: auto;
+	background-color: black;
+
+}
+.skills .row {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	justify-content: space-around;
+	align-content: center;
+	padding: 50px;
+
+}
+
+.logo {
+	flex-direction: column;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 5px solid rgba(255,255,255,0.2);
+	height: 140px;
+	width: 140px;
+	
+	
+}
+.logo-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.logo h4{
+	display: flex;
+	font-size: 1.8em;
+	text-align: center;
+	font-weight: bold;
+	align-items: center;
+	color: white;
+	
+} 
+.logo h5{
+	display: flex;
+	text-align: center;
+	align-items: center;
+	color: white;
+	font-size: 1.5em;
+
+	
+} 
+.one {
+	background-color: green;
+}
+
+.two {
+	background-color: #00DC00;
+}
+
+.three {
+	background-color: #D92E10;
+}
+
+.four {
+	background-color: #002050;
+}
+
+.five {
+	background-color: #1E7145;
+}
+
+
+#shine-me {
+	position:relative;
+    overflow:hidden;
+}
+.logo-content {
+	position:absolute;top:0;left:0;height:100%;width:100%;
+}
+#shine-me:before{
+  content:"";
+  z-index:10;
+  position:absolute;
+  height:200%;
+  width:200%;
+  top:-120%;
+  left:-120%;
+  background:linear-gradient(transparent 0%,
+    rgba(255, 255, 255, 0.1) 45%,
+    rgba(255, 255, 255, 0.5) 50%,
+    rgba(255, 255, 255, 0.1) 55%,
+    transparent 100%);
+    transition:all 0.1s;
+    transform:rotate(-50deg);
+    animation: shine 10s infinite forwards;
+    
+}
+@keyframes shine{
+  0%{top:-120%;left:-120%;}
+  10%{left:100%;top:100%;}
+  20%{left:100%;top:100%;}
+  100%{left:100%;top:100%;}
+  
+}
+
+
+/*SECTION EXPERIENCE*/
+.experience {
+	background-image: url(http://jimbadaluco.com/wp-content/themes/twr/backgrounds/dark-wood.jpg);
+	width: 100%;
+	height: auto;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+}
+.experience h1{
+	color: white;
+	text-transform: capitalize;
+	font-size: 4em;
+	margin: 70px 0;
+}
+.experience-work {
+	background-color: black;
+	width: 80%;
+	color: white;
+	justify-content: center;
+	margin-bottom: 100px;
+	padding: 30px;
+}
+
+.experience-work-box {
+	display: flex;
+	flex-direction: column;
+}
+.experience-work-box h2 {
+	text-transform: capitalize;
+} 
+.experience-work-box img {
+	width: 250px;
+	height: auto;
+	margin: 0;
+} 
+.experience-work-box a {
+	color: white;
+	text-decoration: none;
+
+}
+.experience-work-content h2 {
+	text-transform: uppercase;
+	
+}
+.experience ul li {
+	list-style: square outside none;
+}
+.experience .date {
+    color: #FFFFFF;
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 15px;
+    padding: 15px 0 20px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+
+/*SECTION EDUCATION*/
+.education {
+	background-color: black;
+	width: 100%;
+	height: auto;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+	color: white;
+	flex-wrap: wrap;
+	
+}
+.education h1 {
+	font-size: 4em;
+	text-transform: capitalize;
+	padding: 40px;
+}
+.education-content {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	flex-wrap: wrap;
+	
+
+}
+.education-content-box-pl,
+.education-content-box-uk {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	padding: 50px;
+
+}
+
+.education-content-box-pl {
+	background-color: #14285A;
+
+}
+.education-content-box-uk {
+	background-color: #1D1F2A;
+}
+.education .six {
+	background-color:#354C87; 
+}
+.education .s1 {
+	width: 125px;
+	height: 125px;
+}
+/*SECTION BLANK*/
+.blank {
+	background-color: black;
+	width:100%;
+	height: 10vh;
+}
+
+
+/*SECTION STATEMENT*/
+
+.statement {
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: row;	
+	justify-content: center;
+	align-items: center;
+	color: white;
+	padding: 70px 0;
+	background: url("http://jimbadaluco.com/wp-content/themes/twr/backgrounds/dark-wood.jpg");
+
+}
+
+
+.statement-boxes {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: row;
+	padding: 70px;
+	background-position: fixed;
+	flex-wrap: wrap;
+
+}
+
+.statement-box {
+	height: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	padding: 20px;
+	background-color: rgba(0, 0, 0, 0.6);
+	margin: 20px;
+	border: 1px solid black;
+	text-transform: capitalize;
+}
+.statement-box-icon i{
+	color: white;
+	font-size: 4em;
+
+}
+
+.statement h4 {
+	font-size: 1.2em;
+	margin: 0;
+
+}
+.statement-box-icon {
+	height: 100px;
+}
+.statement-box-title {
+	height: 50px;
+
+}
+
+/*SECTION CLOCK*/
+.timer {
+	display: flex;
+	width: 100%;
+	height: auto;
+	margin: 0;
+	background-color: black;
+	color:white;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 60px;
+}
+
+.clock {
+  font-size: 4em;
+  color: #DEC1A1;
+}
+.clock-slogan {
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+.clock-slogan h2 {
+	text-transform: capitalize;
+}
+
+.clock-slogan h3 {
+	padding-top: 20px;
+	text-transform: uppercase;
+	border-top: 5px solid rgba(255,255,255,0.2);
+}
+
+
+/*SECTION HOBBY*/
+/*section carousel*/
+.hobby {
+	background: url("http://jimbadaluco.com/wp-content/themes/twr/backgrounds/dark-wood.jpg");
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding-top:70px;
+}
+.hobby h1 {
+	text-transform: capitalize;
+	font-size: 4em;
+}
+.hobby h2 {
+	margin-bottom: 70px;
+	text-transform: capitalize;
+}
+.hobby-show {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+}
+.show {
+	width: 50%;
+}
+
+.carousel-caption {
+    left: 20%;
+    top: 20%;
+    transform: translate(-50%, -50%);
+    right: auto;
+    bottom: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.show h6 {
+	font-family: 'Homemade Apple', cursive;
+	font-size: 0.9em;
+	padding-left: 20px;
+}
+
+/*SECTION FOOTER-1*/
+
+.footer {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	font-size: 3em;
+	color: white;
+	justify-content: center;
+	align-items: center;
+	background-color: black;
+
+}
+.footer .icons {
+	background-color: #1D1F2A;
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	padding: 30px 0;
+} 
+.footer .icons i {
+	padding: 10px;
+
+}
+.footer .rights {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 30px;
+	text-align: center;
+}
+.footer .rights h3 {
+	
+	font-size: 0.4em;
+	color: grey;
+	text-transform: capitalize;
+
+
+}
+.footer .rights i {
+	font-size: 1em;
+	margin-top: 10px;
+	color:green;
+}
+.footer .icons1 {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	font-size: 0.7em;
+
+} 
+.footer .icons1 i {
+	padding: 10px;
+	color: blue;
+}
+
+
+/*--- RWD ---*/
+@media (min-width: 778px) and (max-width: 970px){
+	
+	
+	.slogan h3 {
+		padding-left: 30px;
+	}
+
+	.row  {
+		height: auto;
+	}
+	.box1 {
+		flex-direction: column;
+	}
+	
+	.work img {
+		max-width: 100%;
+	}
+	.content {
+		min-width: 70%;
+		
+	}
+
+}
+
+@media (max-width: 777px){
+	.main {
+		max-width: 150px;
+		font-weight: bold;
+		border-radius: 10px;
+		border: 3px solid #DEC1A1;
+		padding: 10px;
+		margin-top: 20px;
+		margin-bottom: 20%;
+	}
+
+	.main h6{
+		font-size: 1em;
+	}
+
+	.slogan h3 {
+		font-size: 2em;
+		padding-left: 30px;
+	}
+
+	.header {
+		padding-left: 20px;
+	}
+    
+	.slogan h1 {
+		font-size: 0.9em;
+	}
+	.title h1 {
+		font-size: 2.2em;
+	}
+	
+	
+	.boxes {
+		flex-direction: column;
+	}
+	.box {
+		max-width: 100%;
+		margin-bottom: 30px;
+	}
+	.work {
+		margin-bottom: 40px;
+	}
+	.work img {
+		margin-bottom: 10px;
+	}
+	.row  {
+		height: auto;
+		flex-direction: column;
+		margin-bottom: 0px;
+	}
+	.box1 {
+		overflow: hidden;
+		margin-bottom: 10px;
+		flex-direction: column;
+		align-items: center;
+
+	}
+	.content {
+		min-width: 100%;
+		
+	}
+}
