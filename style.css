@@ -352,8 +352,12 @@ video {
 	text-transform: uppercase;
 	
 }
+.experience ul {
+	margin: 30px;
+}
 .experience ul li {
 	list-style: square outside none;
+	margin: 20px;
 }
 .experience .date {
     color: #FFFFFF;
@@ -384,6 +388,14 @@ video {
 	text-transform: capitalize;
 	padding: 40px;
 }
+
+.education h3 {
+	margin-top: 30px;
+}
+
+.education h2 {
+	text-transform: capitalize;
+}
 .education-content {
 	display: flex;
 	flex-direction: row;
@@ -400,7 +412,11 @@ video {
 	padding: 50px;
 
 }
-
+.logo-content1 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
 .education-content-box-pl {
 	background-color: #14285A;
 
@@ -411,9 +427,11 @@ video {
 .education .six {
 	background-color:#354C87; 
 }
+
 .education .s1 {
 	width: 125px;
 	height: 125px;
+
 }
 /*SECTION BLANK*/
 .blank {
@@ -433,7 +451,7 @@ video {
 	justify-content: center;
 	align-items: center;
 	color: white;
-	padding: 70px 0;
+	padding: 50px 0;
 	background: url("http://jimbadaluco.com/wp-content/themes/twr/backgrounds/dark-wood.jpg");
 
 }
