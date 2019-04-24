@@ -10,9 +10,9 @@ body {
 	font-size: 16px;
 }
 
-.containerr1 {
-  width: 100%;
-  min-width: 1400px;
+.containerr {
+  
+  max-width: 1400px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -62,6 +62,7 @@ body {
     text-decoration: none;
     padding: 10px ;
     font-size: 1.5em;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 .flex-4 li:first-child a {
 	color: #DEC1A1;
@@ -144,12 +145,13 @@ video {
 	animation: slideInDown 1s ease;
 	margin-bottom: 20%;
 
+
 }
 
 
 .main:hover {
 	background-position: 0 100%; 
-	color: white;		
+
 }
 .main h6{
 	font-size: 1.1em;
@@ -352,12 +354,8 @@ video {
 	text-transform: uppercase;
 	
 }
-.experience ul {
-	margin: 30px;
-}
 .experience ul li {
 	list-style: square outside none;
-	margin: 20px;
 }
 .experience .date {
     color: #FFFFFF;
@@ -388,14 +386,6 @@ video {
 	text-transform: capitalize;
 	padding: 40px;
 }
-
-.education h3 {
-	margin-top: 30px;
-}
-
-.education h2 {
-	text-transform: capitalize;
-}
 .education-content {
 	display: flex;
 	flex-direction: row;
@@ -412,11 +402,7 @@ video {
 	padding: 50px;
 
 }
-.logo-content1 {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
+
 .education-content-box-pl {
 	background-color: #14285A;
 
@@ -427,11 +413,9 @@ video {
 .education .six {
 	background-color:#354C87; 
 }
-
 .education .s1 {
 	width: 125px;
 	height: 125px;
-
 }
 /*SECTION BLANK*/
 .blank {
@@ -451,7 +435,7 @@ video {
 	justify-content: center;
 	align-items: center;
 	color: white;
-	padding: 50px 0;
+	padding: 70px 0;
 	background: url("http://jimbadaluco.com/wp-content/themes/twr/backgrounds/dark-wood.jpg");
 
 }
